@@ -1,0 +1,15 @@
+<h1><%= @asset.title %></h1>
+
+<h2><span id="vote_score">
+Score: <%= @asset.votes.size %>
+</span></h2>
+
+<p><%= h @asset.method %></p>
+<p><%= link_to "Go Back", asset_path %> | <%= link_to "Edit Asset", edit_asset_path %> | <%= link_to "Delete Asset", @asset, :method => :delete %></p>
+
+<div id="vote_form">
+  <% form_remote_tag :url => asset_votes_path(@asset) do %>
+    <%= submit_tag 'Vote for Asset' %>
+  <% end %>
+</div>
+

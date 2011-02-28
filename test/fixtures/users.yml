@@ -1,0 +1,18 @@
+# password: "secret"
+foo:
+  user_id: 2
+  username: foo
+  email: foo@example.com
+  password_hash: "$2a$10$tUpEtZKDRfgosDmX2cUIFeCvHAHn9VT/0ZvmUhXiZCxSIrSdRiLhu"
+  password_salt: "$2a$10$tUpEtZKDRfgosDmX2cUIFe"
+  created_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>
+  updated_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>
+
+bar:
+  user_id: 3
+  username: bar
+  email: bar@example.com
+  password_hash: "$2a$10$tUpEtZKDRfgosDmX2cUIFeCvHAHn9VT/0ZvmUhXiZCxSIrSdRiLhu"
+  password_salt: "$2a$10$tUpEtZKDRfgosDmX2cUIFe"
+  created_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>
+  updated_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>

@@ -1,0 +1,18 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+
+ Cheese_on_Toast
+  id: 1
+  title: Cheese on Toast
+  method: Slice cheese, toast bread and then melt cheese onto toast
+  created_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>
+  updated_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>
+  user_id: 2
+
+Chip Butty
+  id: 2
+  title: Chip Butty
+  method: Cook chips, butter bread and then place chips onto bread
+  created_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>
+  updated_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>
+  user_id: 3

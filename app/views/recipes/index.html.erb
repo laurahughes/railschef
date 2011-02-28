@@ -1,0 +1,15 @@
+<h1>Welcome to RailsChef!</h1>
+
+<% if flash[:notice] %>
+<p style ="color:green;">
+  <%= flash[:notice]%></p>
+<% end %>
+
+<p><%= link_to "Create a new recipe", new_recipe_path %></p>
+
+<ul>
+  <% for recipe in @recipes %>
+    <li><%=h link_to "#{recipe.title}", recipe %></li><br />
+    Created by: <%= h recipe.user_id %>
+<% end %>
+</ul>
